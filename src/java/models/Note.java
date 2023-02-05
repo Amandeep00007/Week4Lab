@@ -7,16 +7,16 @@ package models;
 import java.io.Serializable;
 
 public class Note implements Serializable{
-    private String content;
+    private String contents;
     private String title;
     
     public Note() {
-        content = "";
+        contents = "";
         title = "";
 }
-    public Note(String title, String content) {
+    public Note(String title, String contents) {
         this.title = title;
-        this.content = content;
+        this.contents = contents;
     }
 
     public String getTitle() {
@@ -27,11 +27,11 @@ public class Note implements Serializable{
         this.title = title;
     }
 
-    public String getContent() {
-        return content;
+    public String getContents() {
+        return contents;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setContents(String contents) {
+        this.contents = contents;
     }
 }

@@ -9,15 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Edit Note</title>
+        <title>Simple Note Keeper</title>
     </head>
     <body>
-        <h1>Simple Note Keeper</h1>
-        <h2>Edit Note</h2>
-         <form method="post" action="note">
-            Title: <input type="text" name="title" value="${note.title}"><br>
-            Contents: <textarea name="content" rows="10" cols="20">${note.content}</textarea><br>
-            <input type="submit" value="Save"> 
-        </form>
+        <h1>Simple Note Keeper</h1> <br>
+        <h2>View Note</h2> <br>
+        <h3>Title: ${note.title}</h3> <br>
+        <h3>Contents:${note.contents} </h3>
+        <a href="note?edit">Edit</a>  
     </body>
 </html>
